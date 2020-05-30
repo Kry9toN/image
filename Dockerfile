@@ -85,3 +85,9 @@ RUN git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/
 
 # GClang
 RUN git clone https://github.com/crDroidMod/android_prebuilts_clang_host_linux-x86_clang-6032204 --depth=1 /root/tools/gclang
+
+#GCC ELF
+RUN git clone https://github.com/arter97/arm64-gcc -b master --depth=1 --single-branch /root/tools/gcc-elf
+
+#GCC ARM
+RUN git clone https://github.com/arter97/arm32-gcc -b master --depth=1 --single-branch /root/tools/gcc-arm-elf
