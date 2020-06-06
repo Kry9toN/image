@@ -91,3 +91,9 @@ RUN git clone https://github.com/arter97/arm64-gcc -b master --depth=1 --single-
 
 #GCC ARM
 RUN git clone https://github.com/arter97/arm32-gcc -b master --depth=1 --single-branch /root/tools/gcc-arm-elf
+
+#GCC 11
+RUN git clone https://github.com/chips-project/aarch64-elf -b 11.0.0 --depth=1 --single-branch /root/tools/11
+
+#GCC ARM
+RUN git clone https://github.com/chips-project/arm-eabi -b 11.0.0 --depth=1 --single-branch /root/tools/arm11
