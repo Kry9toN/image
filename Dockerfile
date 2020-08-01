@@ -72,7 +72,10 @@ RUN git config --global user.email "dhimasbagusprayoga@gmail.com"
 RUN git config --global user.name "Kry9toN"
 
 # Clang
-RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/11.0 --depth=1 --single-branch /root/tools/clang
+RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/12.0 --depth=1 --single-branch /root/tools/clang
+
+# proton
+RUN git clone https://github.com/kdrag0n/proton-clang.git -b master --depth=1 --single-branch /root/tools/proton
 
 # AK3
 RUN git clone https://github.com/Kry9toN/AnyKernel3 /root/AnyKernel
@@ -85,12 +88,6 @@ RUN git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/
 
 # GClang
 RUN git clone https://github.com/crDroidMod/android_prebuilts_clang_host_linux-x86_clang-6032204 --depth=1 /root/tools/gclang
-
-#GCC ELF
-RUN git clone https://github.com/arter97/arm64-gcc -b master --depth=1 --single-branch /root/tools/gcc-elf
-
-#GCC ARM
-RUN git clone https://github.com/arter97/arm32-gcc -b master --depth=1 --single-branch /root/tools/gcc-arm-elf
 
 #GCC 11
 RUN git clone https://github.com/chips-project/aarch64-elf -b 11.0.0 --depth=1 --single-branch /root/tools/11
