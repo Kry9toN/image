@@ -49,7 +49,6 @@ RUN apt-get update -qq && \
 	openjdk-8-jdk \
 	openssh-client \
 	openssl \
-        openssh \
 	ovmf \
 	patch \
 	pigz \
@@ -69,6 +68,9 @@ RUN apt-get update -qq && \
 	zip \
 	zlib1g-dev \
 	zstd
+
+# SSH RSA
+RUN mkdir ~/.ssh/ && echo -e "Host frs.sourceforge.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
 
 # Git
 RUN git config --global user.email "dhimasbagusprayoga@gmail.com"
