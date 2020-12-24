@@ -49,7 +49,6 @@ RUN apt-get update -qq && \
 	openjdk-8-jdk \
 	openssh-client \
 	openssl \
-	openssh \
 	ovmf \
 	patch \
 	pigz \
