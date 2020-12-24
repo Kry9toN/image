@@ -49,6 +49,7 @@ RUN apt-get update -qq && \
 	openjdk-8-jdk \
 	openssh-client \
 	openssl \
+	openssh \
 	ovmf \
 	patch \
 	pigz \
@@ -57,7 +58,7 @@ RUN apt-get update -qq && \
 	rsync \
 	shtool \
 	subversion \
-        sshpass \
+	sshpass \
 	tar \
 	texinfo \
 	tzdata \
