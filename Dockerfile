@@ -99,3 +99,6 @@ RUN git clone https://github.com/chips-project/aarch64-elf -b 11.0.0 --depth=1 -
 
 #GCC ARM
 RUN git clone https://github.com/chips-project/arm-eabi -b 11.0.0 --depth=1 --single-branch /root/tools/arm11
+
+# KryPtoN Clang
+RUN git clone https://github.com/Kry9toN/clang -b 13.0/dev --depth=1 --single-branch /root/tools/kclang
