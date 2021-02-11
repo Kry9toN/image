@@ -80,7 +80,7 @@ RUN git config --global user.name "Kry9toN"
 RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/12.0 --depth=1 --single-branch /root/tools/clang
 
 # proton
-RUN git clone https://github.com/kdrag0n/proton-clang.git -b master --depth=1 --single-branch /root/tools/proton
+RUN git clone https://github.com/kdrag0n/proton-clang.git -b 20210206 --depth=1 --single-branch /root/tools/proton
 
 # AK3
 RUN git clone https://github.com/Kry9toN/AnyKernel3 /root/AnyKernel
