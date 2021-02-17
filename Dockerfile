@@ -69,8 +69,8 @@ RUN apt-get update -qq && \
 	zlib1g-dev \
 	zstd
 
-# SSH RSA
-RUN mkdir ~/.ssh/ && echo -e "Host frs.sourceforge.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+# SSH Folder
+RUN mkdir ~/.ssh/
 
 # Git
 RUN git config --global user.email "dhimasbagusprayoga@gmail.com"
