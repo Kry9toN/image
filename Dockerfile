@@ -105,3 +105,9 @@ RUN git clone https://github.com/Kry9toN/clang -b 13.0/dev --depth=1 --single-br
 
 # AK3
 RUN git clone https://github.com/Kry9toN/AnyKernel3 /root/AnyKernel
+
+# GCC EVA ARM
+RUN git clone https://github.com/mvaisakh/gcc-arm --depth=1 /root/tools/gcc-eva-arm
+
+# GCC EVA ARM64
+RUN git clone https://github.com/mvaisakh/gcc-arm64 --depth=1 /root/tools/gcc-eva-arm64
