@@ -16,7 +16,7 @@ jobs:
     - name: Prepare
       id: prep
       run: |
-        DOCKER_IMAGE=${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}
+        DOCKER_IMAGE=${{ secrets.DOCKER_USERNAME }}/image
         VERSION=latest
         TAGS="${DOCKER_IMAGE}:${VERSION}"
         # Set output parameters.
