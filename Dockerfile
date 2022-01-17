@@ -85,6 +85,9 @@ RUN git clone https://github.com/Kry9toN/clang -b dev/13.0 --depth=1 --single-br
 # proton
 RUN git clone https://github.com/kdrag0n/proton-clang.git -b 20210206 --depth=1 --single-branch /root/tools/proton
 
+# avalon
+RUN git clone https://github.com/Haseo97/Avalon-Clang-12.0.0 -b 12.0.0 --depth=1 --single-branch /root/tools/avalon
+
 # GCC
 RUN git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b android-9.0.0_r34 --depth=1 --single-branch /root/tools/gcc
 
@@ -94,17 +97,6 @@ RUN git clone https://github.com/mvaisakh/gcc-arm64.git --depth=1 /root/tools/gc
 # GCC-ARM
 RUN git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 -b android-9.0.0_r34 --depth=1 --single-branch /root/tools/gcc-arm
 
-# GCC 11
-RUN git clone https://github.com/chips-project/aarch64-elf -b 11.0.0 --depth=1 --single-branch /root/tools/11
-
-# GCC ARM
-RUN git clone https://github.com/chips-project/arm-eabi -b 11.0.0 --depth=1 --single-branch /root/tools/arm11
-
 # AK3
 RUN git clone https://github.com/Kry9toN/AnyKernel3 /root/AnyKernel
 
-# GCC EVA ARM
-RUN git clone https://github.com/mvaisakh/gcc-arm --depth=1 /root/tools/gcc-eva-arm
-
-# GCC EVA ARM64
-RUN git clone https://github.com/mvaisakh/gcc-arm64 --depth=1 /root/tools/gcc-eva-arm64
