@@ -76,17 +76,14 @@ RUN mkdir ~/.ssh/
 RUN git config --global user.email "dhimasbagusprayoga@gmail.com"
 RUN git config --global user.name "Kry9toN"
 
-# Clang
-RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/12.0 --depth=1 --single-branch /root/tools/clang
-
 # Clang 13
 RUN git clone https://github.com/Kry9toN/clang -b dev/13.0 --depth=1 --single-branch /root/tools/clang13
 
 # proton
 RUN git clone https://github.com/kdrag0n/proton-clang.git -b 20210206 --depth=1 --single-branch /root/tools/proton
 
-# avalon
-RUN git clone https://github.com/Haseo97/Avalon-Clang-12.0.0 -b 12.0.0 --depth=1 --single-branch /root/tools/avalon
+# twisted-clang
+RUN git clone https://github.com/TwistedPrime/twisted-clang.git -b master --depth=1 --single-branch /root/tools/twisted
 
 # GCC
 RUN git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b android-9.0.0_r34 --depth=1 --single-branch /root/tools/gcc
